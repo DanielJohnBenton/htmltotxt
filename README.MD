@@ -80,6 +80,8 @@ If you have already used the utility before, you may see this warning:
 WARNING: need to replace directory 'htmltotxt_converted/'. ALL EXISTING CONTENTS WILL BE DELETED. Enter 'Y' to confirm. Otherwise 'N'. :
 ```
 
+:warning: You might be able to give something like `C:\` as the path which, while not disastrous, would be a bit daft. Don't be daft.
+
 ## Example:
 
 I'm able to create `file.htm.txt`:
