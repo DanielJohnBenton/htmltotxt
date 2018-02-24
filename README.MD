@@ -895,3 +895,9 @@ In the output, you may notice that:
 * Python 3
 * Built-in modules: math, sys, os, shutil
 * Third-party libraries: [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), [FTFY](https://github.com/LuminosoInsight/python-ftfy)
+
+## Requirements and setup
+
+* Python 3
+* `pip3 install ftfy`
+* `pip install beautifulsoup4`
