@@ -55,6 +55,7 @@ Done.
 ```
 
 ## Usage:
+See [Requirements and setup](#requirements-and-setup) before trying to use.
 
 ```
 > py htmltotxt.py
