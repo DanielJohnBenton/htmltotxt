@@ -78,10 +78,11 @@ def convertFiles(sourcePath, targetPath):
 			contents = contents.replace(f"<{tag}", f"\n<{tag}").replace(f"<{tag.upper()}", f"\n<{tag.upper()}")
 			contents = contents.replace(f"</{tag}>", f"</{tag}> ").replace(f"</{tag.upper()}>", f"</{tag.upper()}> ")
 		
+		soup = BeautifulSoup(contents, "html5lib")
+		[scriptTag.extract() for scriptTag in soup("script")]
+		text = ftfy.fix_text(soup.body.get_text())
+		
 		with open(targetPath + name +".txt", "w", encoding="utf-8") as targetFile:
-			soup = BeautifulSoup(contents, "html5lib")
-			[scriptTag.extract() for scriptTag in soup("script")]
-			text = ftfy.fix_text(soup.body.get_text())
 			targetFile.write(text)
 		
 		nFilesProcessed += 1
