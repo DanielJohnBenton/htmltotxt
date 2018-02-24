@@ -883,6 +883,13 @@ HTML.</p>
 </html>
 ```
 
+In the output, you may notice that:
+* Text with nested tags has been handled e.g. `There is a <b>bunch of <i>text</i></b> in this file.`
+* Escaped HTML entities have been handled e.g. `&amp;` --> `&`
+* Weird encoding characters can be fixed e.g. `“Microsoft Word”` --> `"Microsoft Word"` _this may or may not be a good thing for you_
+* Newlines have been removed where they appear in the HTML code but are not rendered visibly as new lines
+* Newlines have been added where block-level tags are found. This can look excessive however
+
 ## Technology used
 
 * Python 3
