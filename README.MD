@@ -1,4 +1,4 @@
-# Convert static HTML files to plain text
+# Batch convert static HTML files to plain text
 
 `*.html` and `*.htm` files are converted to `.txt`, (hopefully) keeping only the visible text.
 
