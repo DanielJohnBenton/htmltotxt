@@ -904,3 +904,7 @@ In the output, you may notice that:
 * Python 3
 * `pip3 install ftfy`
 * `pip install beautifulsoup4`
+
+## Output encoding
+
+UTF-8
